@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+:root {
+  --matcha: #809871;
+  --dark-olive-gray: #5f6f52;
+}
+.menu-font{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color:#fff !important;
+  }
+
+.cf-bg-primary{
+  background-color: var(--matcha);
+}
