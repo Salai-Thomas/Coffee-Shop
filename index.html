@@ -14,33 +14,28 @@
 
 <body>
 
-    <nav class="navbar cf-bg-primary navbar-expand-lg">
-        <div class="cf-bg-primary container-fluid d-flex justify-content-between">
+    <!--Navigiation-->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
             <div class="brand-area menu-font">
-                <h4>CF Cafe</h4>
+                <h4 class="overflow-hidden">CF Cafe</h4>
             </div>
             <div class="nav-area menu-font">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2">
                       <li class="nav-item mx-lg-4">
-                        <a class="nav-link menu-font active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link menu-font active" href="#">Home</a>
                       </li>
                       <li class="nav-item mx-lg-4 dropdown">
-                        <a class="nav-link menu-font dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link menu-font" href="Coffee/coffee.html">
                           Coffee
                         </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
                       </li>
                       <li class="nav-item mx-lg-4">
-                        <a class="nav-link menu-font">Brewing Equipment</a>
+                        <a class="nav-link menu-font" href="#">Brewing Equipment</a>
                       </li>
                       <li class="nav-item mx-lg-4">
                         <a class="nav-link menu-font" href="#">Events and Workshops</a>
@@ -52,9 +47,449 @@
                   </div>
             </div>
         </div>
-      </nav>
+        <div>
+          <a class="btn text-light">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+    </nav>
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Good Day!</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                Welcome to CF Cafe! We’re thrilled to have you here. 
+                As a new customer, enjoy exclusive discounts and 
+                benefits sign-up now to unlock your perks and start exploring!
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Sign Up</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+    <!--Header-->
+    <header class="banner">
+      <div class="banner-info">
+          <h1 class="overflow-hidden">Welcome To CF Cafe</h1>
+          <h2 class="overflow-hidden">Life happens, coffee helps. Start your day with us.</h2>
+          <button class="btn btn-danger mt-3">Explore</button>
+
+
+
+      </div>
+    </header>
+
+    <!--Featured And Events-->
+    <section class="feature slide-right">
+      <div class="info d-flex aligin-items-center">
+        <h5>10% Discount For First Order and 3% Discount Workshop For New Customer!</h5>
+      </div>
+      <div class="feat-slide">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner overflow-hidden">
+            <div class="carousel-item active overflow-hidden text-center">
+              <h4 class="carousel-head overflow-hidden">Our Products</h4>
+              <div class="row mx-2">
+                <div class="col-lg-3 col-md-6 overflow-hidden">
+                  <img src="assets/img/coffeefeat.jpg" class="carousel-img d-block w-100" alt="coffee">
+                  <h5 class="overflow-hidden text-center my-2">Hot Coffee</h5>
+                </div>
+                <div class="col-lg-3 col-md-6 overflow-hidden">
+                  <img src="assets/img/icecoffee.jpg" class="carousel-img d-block w-100" alt="icecoffee">
+                  <h5 class="overflow-hidden text-center my-2">Ice Coffee</h5>
+                </div>
+                <div class="col-lg-3 col-md-6 overflow-hidden">
+                  <img src="assets/img/beansPackage.jpg" class="carousel-img d-block w-100" alt="beans">
+                  <h5 class="overflow-hidden text-center my-2">Coffee Beans</h5>
+                </div>
+                <div class="col-lg-3 col-md-6 overflow-hidden">
+                  <img src="assets/img/equipment.jpg" class="carousel-img d-block w-100" alt="equipment">
+                  <h5 class="overflow-hidden text-center my-2">Brewing Equipment</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item overflow-hidden text-center">
+              <h4 class="carousel-head overflow-hidden">Our Suggestions</h4>
+              <div class="row mx-2">
+                <div class="col-lg-3 col-md-6 overflow-hidden">
+                  <img src="assets/img/chococoffee.jpg" class="carousel-img d-block w-100" alt="coffee">
+                  <h5 class="overflow-hidden text-center my-2">Chocolate Coffee</h5>
+                </div>
+                <div class="col-lg-3 col-md-6 overflow-hidden">
+                  <img src="assets/img/Icematcha.jpg" class="carousel-img d-block w-100" alt="icecoffee">
+                  <h5 class="overflow-hidden text-center my-2">Ice Matcha</h5>
+                </div>
+                <div class="col-lg-3 col-md-6 overflow-hidden">
+                  <img src="assets/img/americano.jpg" class="carousel-img d-block w-100" alt="beans">
+                  <h5 class="overflow-hidden text-center my-2">Americano</h5>
+                </div>
+                <div class="col-lg-3 col-md-6 overflow-hidden">
+                  <img src="assets/img/mocha.jpg" class="carousel-img d-block w-100" alt="equipment">
+                  <h5 class="overflow-hidden text-center my-2">Mocha</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item overflow-hidden text-center">
+              <h4 class="carousel-head overflow-hidden">Customer Favourites</h4>
+              <div class="row mx-2">
+                <div class="col-lg-3 col-md-6 overflow-hidden">
+                  <img src="assets/img/chococappucino.jpg" class="carousel-img d-block w-100" alt="coffee">
+                  <h5 class="overflow-hidden text-center my-2">Choco Cappucino</h5>
+                </div>
+                <div class="col-lg-3 col-md-6 overflow-hidden">
+                  <img src="assets/img/hotdarkchoco.jpg" class="carousel-img d-block w-100" alt="icecoffee">
+                  <h5 class="overflow-hidden text-center my-2">Hot Dark Choco</h5>
+                </div>
+                <div class="col-lg-3 col-md-6 overflow-hidden">
+                  <img src="assets/img/Icematchalatte.jpg" class="carousel-img d-block w-100" alt="beans">
+                  <h5 class="overflow-hidden text-center my-2">Ice Matcha Latte</h5>
+                </div>
+                <div class="col-lg-3 col-md-6 overflow-hidden">
+                  <img src="assets/img/Icecreamychococoffee.jpg" class="carousel-img d-block w-100" alt="equipment">
+                  <h5 class="overflow-hidden text-center my-2">Ice Creamy Choco coffeeandbread</h5>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="event slide-right overflow-hidden text-light">
+      <div>
+        <div id="carouselEventIndi" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner overflow-hidden pb-3">
+            <h4 class="event-head text-center overflow-hidden">Event Specials</h4>
+            <div class="carousel-item active overflow-hidden text-center">
+              <div class="row d-flex align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 col-md-6">
+                  <img src="assets/img/ChristmasEvent.png" class="event-img w-100 overflow-hidden"/>
+                </div>
+                <div class="col-lg-5 col-md-6 my-4">
+                  <h4 class="overflow-hidden">Christmas Specical Program !</h4>
+                  <p class="fs-4">
+                    Enjoy our exclusive Christmas menu, along with special discounts and gift programs.
+                  </p>
+                  <p class="fs-4">
+                    Celebrate the season with your loved ones family, friends, and partners and make unforgettable memories with us.
+                  </p>
+                </div>
+                <div class="col-lg-1"></div>
+              </div>
+          
+
+          </div>
+
+          <div class="carousel-item overflow-hidden text-center">
+            <div class="row d-flex align-items-center">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-5 col-md-6">
+                <img src="assets/img/HollowenEvent.png" class="event-img w-100 overflow-hidden"/>
+              </div>
+              <div class="col-lg-5 col-md-6 my-4">
+                <h4 class="overflow-hidden">Halloween Special Program !</h4>
+                  <p class="fs-4">
+                    Join us for a thrilling Halloween celebration featuring spooky-themed menus, exciting discounts.
+                  </p>
+                  <p class="fs-4">
+                    Come in costume and enjoy a fun-filled Halloween party with your family, friends, and loved ones. Let’s make this night unforgettable!
+                  </p>
+
+                </div>
+            </div>
+          
+        </div>
+
+        <div class="carousel-item overflow-hidden text-center">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 col-md-6">
+              <img src="assets/img/EasterEvent.png" class="event-img w-100 overflow-hidden"/>
+            </div>
+            <div class="col-lg-5 col-md-6 my-4">
+              <h4 class="overflow-hidden">Easter Special Program !</h4>
+              <p class="fs-4">
+                Celebrate the joy of Easter with our delightful Easter-themed menu, exclusive discounts.
+              </p>
+              <p class="fs-4">
+              Bring your family and friends and join us for a warm and festive Easter gathering filled with love, laughter, and memorable moments.
+            </p>
+
+            </div>
+          </div>
+        
+      </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselEventIndi" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselEventIndi" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--OverAll-->
+    <section class="overall">
+
+      <div class="row menu-card pt-3">
+            <div class="col-lg-2"></div>
+            <img src="assets/img/coffeeandbread.jpg" class="img-card col-lg-4 col-sm-12 ms-5 mb-3"/>
+            <div class="menu-text ms-2 col-lg-4 col-sm-12 overflow-hidden">
+              <h1 class="overflow-hidden">Coffee And Snacks</h1>
+              <h3 class="overflow-hidden">Experience the art of harmonious flavors with our premium coffee and snack pairings.</h3>
+            </div> 
+            <div class="col-lg-2"></div>
+
+      </div>
+
+      <div class="row menu-card pt-3">
+        <div class="col-lg-2"></div>
+        <img src="assets/img/Beans.jpg" class="img-card col-lg-4 col-sm-12 ms-5 mb-3"/>
+        <div class="menu-text ms-2 col-lg-4 col-sm-12">
+          <h1 class="overflow-hidden">Premium Coffee Beans</h1>
+          <h3 class="overflow-hidden">We take pride in offering a premium selection of the finest quality coffee beans, sourced from renowned growing regions around the world. </h3>
+        </div> 
+        <div class="col-lg-2"></div>
+
+      </div>
+  <div class="row menu-card pt-3">
+    <div class="col-lg-2"></div>
+    <img src="assets/img/chocodonuts.jpg" class="img-card col-lg-4 col-sm-12 ms-5 mb-3"/>
+    <div class="menu-text ms-2 col-lg-4 col-sm-12">
+      <h1 class="overflow-hidden">Delicious Desserts</h1>
+      <h3 class="overflow-hidden">Artisanal desserts crafted to delight because great coffee tastes even better with something sweet.</h3>
+    </div> 
+    <div class="col-lg-2"></div>
+
+</div>
+    </section>
+
+
+
+    <!--Workshop-->
+    <section class="workshop">
+      <header class="text-center">
+        <h3>Master the Art of Coffee Brewing</h3>
+        <h4>Join Our Interactive Workshop & Brew Like a Barista!</h4>
+        <h5><i class="fa-solid fa-mug-hot mb-1"></i> Learn from Experts <span class="ms-3">Hands-on training from professional baristas</span></h5>
+        <h5><i class="fa-solid fa-fire-flame-curved mb-1"></i> Discover Brewing Methods <span class="ms-3">Pour-over, French Press, AeroPress & more</span></h5>
+        <h5 class="me-5"><i class="fa-brands fa-pagelines mb-1"></i> Fresh Beans & Techniques <span class="ms-3">From grind size to water temperature</span></h5>
+      </header>
+
+      <div class="row">
+          <div class="col-lg-6 col-11 ms-2">
+            <img src="assets/img/Workshop.jpg"/>
+          </div>
+          <div class="col-lg-5 col-11 text-center ms-2 mt-2">
+            <h3 class="overflow-hidden">Coffee And Tea Workshop</h3>
+            <h4 class="overflow-hidden">Tuesday - Friday - Sunday</h4>
+            <h4 class="overflow-hidden">9:00AM - 12:00PM</h4>
+            <h5 class="overflow-hidden">Fun & informative half day hands-on workshop about tree to cup coffee and tea</h5>
+
+            <div class="d-flex justify-content-between">
+              <ul class="ms-5">
+                <li>COFFEE</li>
+                <li>Cultivation</li>
+                <li>Processing</li>
+                <li>Roasting</li>
+                <li>Grinding</li>
+                <li>Dripping</li>
+                <li>Sensory</li>
+                <li>Cupping</li>
+              </ul>
+
+              <ul>
+                <li>TEA</li>
+                <li>Cultivation</li>
+                <li>Processing</li>
+                <li>Blending</li>
+                <li>Infusing</li>
+                <li>Brewing</li>
+              </ul>
+            </div>
+          </div>      
+        </div>
+    </section>
+
+    <!--register-->
+
+    <section class="register text-light overflow-hidden">
+      <!-- <img src="assets/img/adobe.jpeg" class="reg-img"/> -->
+       <div class="register-head text-center">
+        <h3 class="overflow-hidden">Registeration</h3>
+        <h4 class="overflow-hidden">Join Our Workshops</h4>
+       </div>
+
+       <div class="row register-form">
+          <div class="col-lg-3"></div>
+          <form class="col-lg-5">
+            <div class="mb-3">
+              <label for="input-first-name" class="form-label">First Name</label>
+              <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="input-last-name" class="form-label">Last Name</label>
+              <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="input-email" class="form-label">Email address</label>
+              <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-dark">Register</button>
+          </form>
+       </div>
+
+    </section>
+
+    <!--Special Offers and Subscriptions-->
+    <section class="sub bg-dark">
+      <header class="text-center text-light">
+        <h3>Special Offers and Subscriptions</h3>
+      </header>
+
+      <div class="pricing row">
+        <div class="col-lg-4 px-4 my-3">
+          <div class="card pricing-card basic-plan">
+            <div class="card-body">
+              <h3 class="card-title overflow-hidden">Basic</h3>
+              <h4 class="card-title overflow-hidden mb-3">$20 Per Month</h4>
+              <h5 class="mt-2 overflow-hidden">Free Delivery To 10 Orders</h5>
+              <h5 class="overflow-hidden my-3">2% Discount To Every Coffee Order</h5>
+              <h5 class="overflow-hidden my-3">2% Discount To Every Snacks Order</h5>
+            </div>
+            <div class="mb-3 ms-3">
+              <a href="#" class="btn btn-dark">Subscribe</a>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 px-2 my-3">
+          <div class="card pricing-card medium-plan">
+            <div class="card-body">
+              <h3 class="card-title overflow-hidden">Medium</h3>
+              <h4 class="card-title overflow-hidden mb-3">$40 Per Month</h4>
+              <h5 class="mt-2 overflow-hidden">Free Delivery To Every Order</h5>
+              <h5 class="overflow-hidden my-3">3% Discount To Every Coffee Order</h5>
+              <h5 class="overflow-hidden my-3">2% Discount To Every Snacks Order</h5>
+              <h5 class="overflow-hidden my-3">2% Discount To Coffee Bean</h5>
+              <h5 class="overflow-hidden my-3">3% Discount To Coffee And Tea Workshops</h5>
+            </div>
+            <div class="mb-3 ms-3">
+              <a href="#" class="btn btn-dark">Subscribe</a>
+
+            </div>
+          </div>
+        </div>
+
+    <div class="col-lg-4 px-4 my-3">
+          <div class="card pricing-card premium-plan">
+            <div class="card-body">
+              <h3 class="card-title overflow-hidden">Premium</h3>
+              <h4 class="card-title overflow-hidden mb-3">$60 Per Month</h4>
+              <h5 class="mt-2 overflow-hidden">Free Delivery To Every Order</h5>
+              <h5 class="overflow-hidden my-3">7% Discount To Every Coffee Order</h5>
+              <h5 class="overflow-hidden my-3">2% Discount To Every Snacks Order</h5>
+              <h5 class="overflow-hidden my-3">2% Discount To Coffee Bean</h5>
+              <h5 class="overflow-hidden my-3">3% Discount To Brewing Equipment</h5>
+              <h5 class="overflow-hidden my-3">10% Discount To Coffee And Tea Workshops</h5>
+            </div>
+            <div class="mb-3 ms-3">
+              <a href="#" class="btn btn-dark">Subscribe</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Footer-->
+
+    <footer class="row">
+      <div class="foot-map col-lg-3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15109.584404020321!2d98.98102855541991!3d18.780492999999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3b2b02d26a83%3A0x5069a05a7aa67522!2sHome%20Burmese%20and%20Vegetarian%20Restaurant!5e0!3m2!1sen!2sth!4v1745056748643!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="foot-navbar col-lg-3">
+        <ul class="foot-nav">
+          <li class="fw-bold">Quick Navigations</li>
+          <li class="mt-2"><a class="foot-navlink ms-5" href="#">Home</a></li>
+          <li class="mt-2"><a class="foot-navlink ms-5" href="Coffee/coffee.html">Coffee</a></li>
+          <li class="mt-2"><a class="foot-navlink ms-5" href="#">Brewing Equipment</a></li>
+          <li class="mt-2"><a class="foot-navlink ms-5" href="#">Events and Workshops</a></li>
+          <li class="mt-2"><a class="foot-navlink ms-5" href="#">Special Offers and Subscriptions</a></li>
+
+        </ul>
+      </div>
+      <div class="foot-navbar col-lg-2">
+        <ul class="foot-nav">
+          <li class="fw-bold">Further Links</li>
+          <li class="mt-2"><a class="foot-navlink" href="#">Term & Condition</a></li>
+          <li class="mt-2"><a class="foot-navlink" href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="foot-navbar col-lg-3">
+        <ul class="foot-nav">
+          <li class="fw-bold">Get In Touch</li>
+          <li class="mt-2"><a class="foot-navlink" href="#"><i class="fa-solid fa-location-dot"></i><span class="ms-2">21 Huay Kaew Rd, Tambon Su Thep</span></a></li>
+          <li class="mt-2"><a class="foot-navlink" href="#"><i class="fa-solid fa-phone"></i><span class="ms-2">097899214</span></a></li>
+          <li class="mt-2"><a class="foot-navlink" href="#"><i class="fa-solid fa-envelope"></i><span class="ms-2">support@mail.com</span></a></li>
+          <li class="mt-2"><a class="foot-navlink" href="#"><i class="fa-brands fa-square-facebook"></i><span class="ms-2">Facebook</span></a></li>
+          <li class="mt-2"><a class="foot-navlink" href="#"><i class="fa-brands fa-instagram"></i><span class="ms-2">Instagram</span></a></li>
+        </ul>
+      </div>
+      <div class="copy-right mt-4">
+        <p class="mt-2">Copyright © 2025| Powered by CF Cafe. Make with <i class="fa-solid fa-heart text-danger"></i></p>
+      </div>
+    </footer>
 
     <!--bootstrap-5.3.5 js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <!--fontawesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--Swiper-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="./app.js" type="text/javascript"></script>
 </body>
 </html>
