@@ -1,0 +1,25 @@
+/* Subscriptions */
+
+.sub > header{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+
+  padding-top: 75px;
+}
+
+.pricing-card{
+  height:430px;
+}
+.basic-plan{
+  background-color: #B87333;
+}
+
+.medium-plan{
+  background-color: #C0C0C0;
+}
+
+.premium-plan{
+  background-color: #FFD700	;
+}

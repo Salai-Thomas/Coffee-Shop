@@ -1,0 +1,22 @@
+/* Coffee Selection */
+.coffee-selection{
+  padding-top:80px;
+  background-color: #f5f0f0;
+  height: auto;
+}
+
+.card-img-top{
+  width:auto;
+  height:200px;
+}
+
+.card{
+  height:540px !important;
+}
+
+.card-footer{
+  background:#fff !important;
+  border-top: none;
+}
+ 
+

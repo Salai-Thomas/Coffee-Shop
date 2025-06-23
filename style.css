@@ -8,6 +8,7 @@
 
 *{
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .menu-font,.register-head,.workshop{
@@ -112,45 +113,47 @@
   }
 }
 
-.event{
-  background-color: #171f55;
-}
 
-.event-head {
+
+.sideline-head {
   text-align: center;
   position: relative;
-  margin: 20px 0; /* adjust vertical spacing as needed */
 }
 
-.event-head::before,
-.event-head::after {
+.sideline-head::before,
+.sideline-head::after {
   content: "";
   position: absolute;
   top: 50%;
-  width: 40%;   /* Adjust this percentage to change the line lengths */
-  border-top: 1px solid #fff; /* Change color or thickness if needed */
+  border-top: 1px solid;
+  width:40%;
 }
 
-.event-head::before {
+.sideline-dark{
+  border-color: #000;
+}
+
+.sideline-light{
+  border-color: #fff;
+}
+
+.sideline-head::before {
   left: 20px;
 }
 
-.event-head::after {
+.sideline-head::after {
   right: 20px;
 }
 
 @media (max-width: 990px) {
-  .event-head::before,
-  .event-head::after {
-    width: 30%;   /* Adjust this percentage to change the line lengths */
+  .sideline-head::before,
+  .sideline-head::after {
+    width: 30%;   
   }
 }
 
 
-.event-img{
-  height:310px;
-  margin-top:10px;
-}
+
 
 
 
@@ -172,24 +175,43 @@
 .menu-text{
   width:500px;
 }
-.img-card{
-  width:200px;
-  height:180px;
+.img-card {
+  width: 200px;
+  height: 180px;
+
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+
+  transition: transform 0.5s ease;
+
+  cursor: pointer;
+}
+
+.img-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-a{
+  background-image: url('assets/img/coffeeandbread.jpg');
+}
+
+.card-b{
+    background-image: url('assets/img/Beans.jpg');
+}
+
+.card-c{
+    background-image: url('assets/img/chocodonuts.jpg');
 }
 
 
-/* Coffee Selection */
-.coffee-selection{
-  padding-top:80px;
-  background-color: #f5f0f0;
-  height: auto;
-}
 
 
-.card-img-top{
-  width:auto;
-  height:200px;
-}
+
+
+
+
 
 /* Workshop */
 
@@ -220,40 +242,13 @@
   font-style: italic;
 }
 
-/* .reg-img{
-  width: 100%;
-  background-color: #000;
-  opacity:0.5;
-} */
 
-/* Subscriptions */
-.sub > header{
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: italic;
-
-}
-
-.pricing-card{
-  height:430px;
-}
-.basic-plan{
-  background-color: #B87333;
-}
-
-.medium-plan{
-  background-color: #C0C0C0;
-}
-
-.premium-plan{
-  background-color: #FFD700	;
-}
 /* Footer */
 
 footer{
   height: 400px;
   background:#2f2f30;
+  font-size:15px;
 }
 
 .foot-map > iframe{

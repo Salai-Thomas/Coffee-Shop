@@ -1,0 +1,15 @@
+.sideline-head::before,
+.sideline-head::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-top: 1px solid;
+  width:35%;
+}
+
+@media (max-width: 990px) {
+  .sideline-head::before,
+  .sideline-head::after {
+    width: 15%;   
+  }
+}
