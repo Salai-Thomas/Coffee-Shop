@@ -16,7 +16,6 @@
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    /* color:#fff !important; */
   }
 
 /* Navigiation */
@@ -84,6 +83,11 @@
   padding-bottom: 8px; 
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  transform: scale(2);
+  color: #fff;
+}
 .carousel-img{
   height: 280px;
 }
