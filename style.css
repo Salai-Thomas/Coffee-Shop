@@ -95,11 +95,11 @@
   height:40px;
   background-color: #a67b19;
   color: #fff;
-
+  font-size: 1.2rem;
 }
 
 @media (min-width: 1231px) {
-  .slide-right > div > h5 {
+  .slide-right > div > p {
     margin-left: 500px;
     animation: 5s slide-right;
     animation-delay: 5s;
