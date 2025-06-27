@@ -76,7 +76,6 @@
 .feature{
   padding-bottom:20px;
 }
-
 .carousel-head {
   display: inline-block; 
   border-bottom: 2px solid #000;
@@ -86,10 +85,10 @@
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   transform: scale(2);
-  color: #fff;
 }
 .carousel-img{
   height: 280px;
+  position:relative;
 }
 
 .info{
