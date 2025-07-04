@@ -10,7 +10,15 @@ let orderlines = [
     row.find('.qty').text(orderlines[index].qty);
     row.find('.total').text(orderlines[index].qty * orderlines[index].price);
   }
+function updateOrderSummary() {
+  let subtotal = 0;
+  orderlines.forEach(function(line) {
+    subtotal += line.qty * line.price;
+  });
 
+  $('.subtotal').text(`$${subtotal}`);
+  $('.order-total').text(`$${subtotal}`); // Assuming shipping is $0
+}
 orderlines.forEach(function(line,index){
 
   $('#orderlines').append(
@@ -27,18 +35,17 @@ orderlines.forEach(function(line,index){
 
   $(document).on('click', '.increment', function() {
     let index = $(this).data('index');
-    console.log("Increment clicked for item index:", index);
     orderlines[index].qty += 1;
-    console.log(orderlines[index].qty);
     updateRowUI(index);
+    updateOrderSummary();
   });
 
   $(document).on('click', '.decrement', function() {
     let index = $(this).data('index');
-    console.log("Increment clicked for item index:", index);
     if(orderlines[index].qty != 0){
       orderlines[index].qty -= 1;
       updateRowUI(index);
+      updateOrderSummary();
     }
 
   });
