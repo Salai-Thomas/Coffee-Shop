@@ -10,8 +10,8 @@
 
 
 <!--CSS-->
-<link href="../style.css" rel="stylesheet" type="text/css">
-<link href="./coffee.css" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='./style.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='./coffee.css') }}" rel="stylesheet" type="text/css">
 </head>
 
 
@@ -30,10 +30,10 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2">
                       <li class="nav-item mx-lg-4">
-                        <a class="nav-link menu-font" href="../index.html">Home</a>
+                        <a class="nav-link menu-font" href="/">Home</a>
                       </li>
                       <li class="nav-item mx-lg-4 dropdown">
-                        <a class="nav-link menu-font active" href="#">
+                        <a class="nav-link menu-font active" href="/coffee">
                           Coffee
                         </a>
                       </li>
@@ -84,7 +84,7 @@
               <div class="row">
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/Cappuccino.jpg" class="card-img-top" alt="cafe1">
+                    <img src="{{ url_for('static', filename='img/Cappuccino.jpg') }}" class="card-img-top" alt="cafe1">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">Cappuccino</h5>
                       <p>A classic Italian coffee made with equal parts espresso, steamed milk.</p>
@@ -100,7 +100,7 @@
                                  
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/chococappucino.jpg" class="card-img-top" alt="cafe2">
+                    <img src="{{ url_for('static', filename='img/chococappucino.jpg') }}" class="card-img-top" alt="cafe2">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">Choco Cappuccino</h5>
                       <p>A rich blend of espresso, steamed milk, and chocolate flavor.</p>
@@ -116,7 +116,7 @@
     
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/chococoffee.jpg" class="card-img-top" alt="cafe3">
+                    <img src="{{ url_for('static', filename='img/chococoffee.jpg') }}" class="card-img-top" alt="cafe3">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">Choco Coffee</h5>
                       <p>A smooth mix of coffee and chocolate.</p>
@@ -132,7 +132,7 @@
     
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/Icematcha.jpg" class="card-img-top" alt="cafe4">
+                    <img src="{{ url_for('static', filename='img/Icematcha.jpg') }}" class="card-img-top" alt="cafe4">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">Ice Matcha</h5>
                       <p>Refreshing green tea made from finely ground matcha powder.</p>
@@ -150,7 +150,7 @@
               <div class="row">
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/mocha.jpg" class="card-img-top" alt="cafe4">
+                    <img src="{{ url_for('static', filename='img/mocha.jpg') }}" class="card-img-top" alt="cafe4">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">Mocha</h5>
                       <p>A delicious blend of espresso, chocolate, and steamed milk.</p>
@@ -166,7 +166,7 @@
     
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/mocha.jpg" class="card-img-top" alt="cafe4">
+                    <img src="{{ url_for('static', filename='img/mocha.jpg') }}" class="card-img-top" alt="cafe4">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">Mocha</h5>
                       <p>A delicious blend of espresso, chocolate, and steamed milk.</p>
@@ -182,7 +182,7 @@
     
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/mocha.jpg" class="card-img-top" alt="cafe4">
+                    <img src="{{ url_for('static', filename='img/mocha.jpg') }}" class="card-img-top" alt="cafe4">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">Mocha</h5>
                       <p>A delicious blend of espresso, chocolate, and steamed milk.</p>
@@ -198,7 +198,7 @@
     
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/mocha.jpg" class="card-img-top" alt="cafe4">
+                    <img src="{{ url_for('static', filename='img/mocha.jpg') }}" class="card-img-top" alt="cafe4">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">Mocha</h5>
                       <p>A delicious blend of espresso, chocolate, and steamed milk.</p>
@@ -261,6 +261,7 @@
          <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <script src="./app.js"></script>
+    <script src="{{ url_for('static', filename='./app.js') }}"></script>
 </body>
 </html>
+

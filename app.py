@@ -4,7 +4,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')  # serve your existing static HTML
+    return render_template('index.html')  
+
+@app.route('/coffee')
+def coffee():
+    return render_template('coffee.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
