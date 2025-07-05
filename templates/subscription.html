@@ -10,8 +10,8 @@
 
 
 <!--CSS-->
-<link href="../style.css" rel="stylesheet" type="text/css">
-<link href="sub.css" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='sub.css') }}" rel="stylesheet" type="text/css">
 </head>
 
 
@@ -29,28 +29,28 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2">
                       <li class="nav-item mx-lg-4">
-                        <a class="nav-link menu-font" href="../index.html">Home</a>
+                        <a class="nav-link menu-font" href="/">Home</a>
                       </li>
-                      <li class="nav-item mx-lg-4 dropdown">
-                        <a class="nav-link menu-font" href="../Coffee/coffee.html">
+                      <li class="nav-item mx-lg-4">
+                        <a class="nav-link menu-font" href="/coffee">
                           Coffee
                         </a>
                       </li>
                       <li class="nav-item mx-lg-4">
-                        <a class="nav-link menu-font" href="../equipment/equip.html">Brewing Equipment</a>
+                        <a class="nav-link menu-font" href="equip">Brewing Equipment</a>
                       </li>
                       <li class="nav-item mx-lg-4">
-                        <a class="nav-link menu-font" href="../Events/event.html">Events and Workshops</a>
+                        <a class="nav-link menu-font" href="/event">Events and Workshops</a>
                       </li>
                       <li class="nav-item mx-lg-4">
-                        <a class="nav-link menu-font active" href="#">Special Offers and Subscriptions</a>
+                        <a class="nav-link menu-font active" href="/subscription">Special Offers and Subscriptions</a>
                       </li>
                     </ul>
                   </div>
             </div>
         </div>
         <div>
-          <a aria-label="View Cart" class="btn text-light" href="../Cart/cart.html">
+          <a aria-label="View Cart" class="btn text-light" href="/cart">
             <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </div>

@@ -10,9 +10,9 @@
 
 
 <!--CSS-->
-<link href="../style.css" rel="stylesheet" type="text/css">
-<link href="../Coffee/coffee.css" rel="stylesheet" type="text/css">
-<link href="equip.css" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='coffee.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ url_for('static', filename='equip.css') }}" rel="stylesheet" type="text/css">
 </head>
 
 
@@ -31,28 +31,28 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2">
                       <li class="nav-item mx-lg-4">
-                        <a class="nav-link menu-font" href="../index.html">Home</a>
+                        <a class="nav-link menu-font" href="/">Home</a>
                       </li>
                       <li class="nav-item mx-lg-4">
-                        <a class="nav-link menu-font" href="../Coffee/coffee.html">
+                        <a class="nav-link menu-font" href="/coffee">
                           Coffee
                         </a>
                       </li>
                       <li class="nav-item mx-lg-4">
-                        <a class="nav-link menu-font active" href="#">Brewing Equipment</a>
+                        <a class="nav-link menu-font active" href="equip">Brewing Equipment</a>
                       </li>
                       <li class="nav-item mx-lg-4">
-                        <a class="nav-link menu-font" href="../Events/event.html">Events and Workshops</a>
+                        <a class="nav-link menu-font" href="/event">Events and Workshops</a>
                       </li>
                       <li class="nav-item mx-lg-4">
-                        <a class="nav-link menu-font" href="../subscriptions/subscription.html">Special Offers and Subscriptions</a>
+                        <a class="nav-link menu-font" href="/subscription">Special Offers and Subscriptions</a>
                       </li>
                     </ul>
                   </div>
             </div>
         </div>
         <div>
-          <a aria-label="View Cart" class="btn text-light" href="../Cart/cart.html">
+          <a aria-label="View Cart" class="btn text-light" href="/cart">
             <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </div>
@@ -67,7 +67,7 @@
               <div class="row">
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/equipment/AidenBrewer_MB_PDP_Image1__22346.jpg" class="card-img-top" alt="cafe1">
+                    <img src="{{ url_for('static', filename='img/equipment/AidenBrewer_MB_PDP_Image1__22346.jpg') }}" class="card-img-top" alt="cafe1">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">AidenBrewer</h5>
                       <p>
@@ -83,7 +83,7 @@
                                  
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/equipment/chemex-6-cups-classic__15623.jpg" class="card-img-top" alt="cafe2">
+                    <img src="{{ url_for('static', filename='img/equipment/chemex-6-cups-classic__15623.jpg') }}" class="card-img-top" alt="cafe2">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">Chemex 6 Cup Classic</h5>
                       <p>
@@ -100,7 +100,7 @@
     
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/equipment/hario-bona-enamel-pourover-kettle-800ml__53216.jpg" class="card-img-top" alt="cafe3">
+                    <img src="{{ url_for('static', filename='img/equipment/hario-bona-enamel-pourover-kettle-800ml__53216.jpg') }}" class="card-img-top" alt="cafe3">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">Hario Bona Enamel Pour Over Kettle – 800ml</h5>
                       <p>
@@ -117,7 +117,7 @@
     
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/equipment/Technivorm-Moccamaster-KBGV-WBG-3__74688.jpg" class="card-img-top" alt="cafe4">
+                    <img src="{{ url_for('static', filename='img/equipment/Technivorm-Moccamaster-KBGV-WBG-3__74688.jpg') }}" class="card-img-top" alt="cafe4">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">Technivorm Moccamaster KBGV Select (WBG 3)</h5>
                       <p>The Technivorm Moccamaster KBGV Select is a premium automatic drip coffee maker, 
@@ -136,7 +136,7 @@
               <div class="row">
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/equipment/AidenBrewer_MB_PDP_Image1__22346.jpg" class="card-img-top" alt="cafe1">
+                    <img src="{{ url_for('static', filename='img/equipment/AidenBrewer_MB_PDP_Image1__22346.jpg') }}" class="card-img-top" alt="cafe1">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">AidenBrewer</h5>
                       <p>
@@ -152,7 +152,7 @@
                                  
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/equipment/chemex-6-cups-classic__15623.jpg" class="card-img-top" alt="cafe2">
+                    <img src="{{ url_for('static', filename='img/equipment/chemex-6-cups-classic__15623.jpg') }}" class="card-img-top" alt="cafe2">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">Chemex 6 Cup Classic</h5>
                       <p>
@@ -169,7 +169,7 @@
     
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/equipment/hario-bona-enamel-pourover-kettle-800ml__53216.jpg" class="card-img-top" alt="cafe3">
+                    <img src="{{ url_for('static', filename='img/equipment/hario-bona-enamel-pourover-kettle-800ml__53216.jpg') }}" class="card-img-top" alt="cafe3">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">Hario Bona Enamel Pour Over Kettle – 800ml</h5>
                       <p>
@@ -186,7 +186,7 @@
     
                 <div class="col-lg-3 col-md-6 mb-3">
                   <div class="card coffee-card shadow-lg">
-                    <img src="../assets/img/equipment/Technivorm-Moccamaster-KBGV-WBG-3__74688.jpg" class="card-img-top" alt="cafe4">
+                    <img src="{{ url_for('static', filename='img/equipment/Technivorm-Moccamaster-KBGV-WBG-3__74688.jpg') }}" class="card-img-top" alt="cafe4">
                     <div class="card-body">
                       <h5 class="card-title overflow-hidden">Technivorm Moccamaster KBGV Select (WBG 3)</h5>
                       <p>The Technivorm Moccamaster KBGV Select is a premium automatic drip coffee maker, 
